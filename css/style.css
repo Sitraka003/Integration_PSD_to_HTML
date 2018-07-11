@@ -6,6 +6,18 @@
     font-family: Roboto;
     src: url('../fonts/Roboto/Roboto-Regular.ttf')
 }
+@font-face {
+    font-family: Roboto-Light;
+    src: url('../fonts/Roboto/Roboto-Light.ttf')
+}
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url('../fonts/Playfair_Display/PlayfairDisplay-Black.ttf')
+}
+@font-face {
+    font-family: Hammersmith_One;
+    src: url('../fonts/Hammersmith_One/HammersmithOne-Regular.ttf')
+}
 
 html, body {
     margin: 0;
@@ -24,6 +36,9 @@ body {
     transform: translateX(-50%)
 }
 
+.header .container {
+    height: 670px;
+}
 
 .header {
     background-image: linear-gradient(0deg, rgba(9, 5, 47, 0.85) 0%, rgba(49, 29, 94, 0.85) 100%),
@@ -45,6 +60,8 @@ body {
 
 .navigation ul {
     display: flex;
+    width: 530px;
+    justify-content: space-between
 }
 
 a {
@@ -54,8 +71,9 @@ a {
 .navigation li{
     list-style: none;
     font-family: 'Roboto';
+    font-weight: 500;
     font-size: 13px;
-    margin-left: 25px;
+    /* padding-left: 25px; */
     text-transform: uppercase;
     color: #fff;
     transition: 0.5s;
@@ -63,4 +81,82 @@ a {
 
 .navigation li:hover {
     color: #00e0d0;
+}
+
+.main {
+    position: relative;
+    top: 130px;
+}
+
+.text {
+    color: #fff
+}
+
+.text h1 {
+    font-family: 'PlayfairDisplay';
+    text-align: center;
+    /* margin-top: 160px; */
+}
+.text .separateur {
+    content: '';
+    height: 1px;
+    width: 50px;
+    background: #00e0d0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.text p {
+    width: 780px;
+    text-align: center;
+    font-family: 'Roboto-Light';
+    font-size: 14px;
+    word-spacing: 4px;
+    line-height: 24px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 22px 0 44px 0;
+}
+
+button {
+    background: none;
+    border: 1px solid #00e0d0;
+    border-radius: 2px;
+    color: #00e0d0;
+    font-family: 'Hammersmith_One';
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+button:hover {
+    color: white;
+    background-color: #00e0d0;
+}
+
+
+.dots {
+    display: flex;
+    position: relative;
+    width: 55px;
+    justify-content: space-between;
+    left: 50%;
+    top: 120px;
+    transform: translateX(-50%);
+}
+.dot {
+    width: 8px;
+    height: 8px;
+    /* background-color: #00e0d0; */
+    border: 1px solid #00e0d0;
+    border-radius: 50%;
+}
+.dot-active {
+    background-color: #00e0d0;
+    border-color: #00e0d0;
 }
