@@ -34,7 +34,8 @@ body {
     width: 940px;
     position: relative;
     left: 50%;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
+
 }
 button {
     background: none;
@@ -112,7 +113,7 @@ a {
     font-family: 'PlayfairDisplay';
     text-align: center;
 }
-.main .text .separateur {
+.separateur {
     content: '';
     height: 1px;
     width: 50px;
@@ -240,3 +241,56 @@ a {
     margin-bottom: 0;
 }
 
+.expertise {
+    height: 755px;
+}
+
+.expertise .titles {
+    font-family: 'PlayfairDisplay';
+}
+
+.expertise .titles h2 {
+    font-size: 22px;
+    color: rgb(65, 61, 75);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 70px;
+}
+.expertise .titles .text {
+    color: rgba(47, 45, 53, 0.749);
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 17px 0 20px 0;
+}
+.items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 100px 0;
+    grid-row-gap: 100px;
+}
+
+.item {
+    width: 300px;
+}
+.item img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.item h4 {
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: rgb(65, 61, 75);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.item p {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgba(51, 51, 51, 0.749);
+    line-height: 1.571;
+    text-align: center;
+}
