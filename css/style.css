@@ -59,8 +59,7 @@ button:hover {
 }
 
 .header {
-    background-image: linear-gradient(0deg, rgba(9, 5, 47, 0.85) 0%, rgba(49, 29, 94, 0.85) 100%),
-    url('../img/jpg/PUT YOUR IMAGE HERE.jpg');
+    background-image: linear-gradient(0deg, rgba(9, 5, 47, 0.85) 0%, rgba(49, 29, 94, 0.85) 100%), url('../img/jpg/PUT YOUR IMAGE HERE.jpg');
     background-size: cover;
     background-position: center;
     left: 0px;
@@ -245,11 +244,11 @@ a {
     height: 755px;
 }
 
-.expertise .titles {
+.expertise .title {
     font-family: 'PlayfairDisplay';
 }
 
-.expertise .titles h2 {
+.expertise .title h2 {
     font-size: 22px;
     color: rgb(65, 61, 75);
     font-weight: bold;
@@ -257,29 +256,29 @@ a {
     text-align: center;
     margin-top: 70px;
 }
-.expertise .titles .text {
+.expertise .title p {
     color: rgba(47, 45, 53, 0.749);
     font-size: 14px;
     line-height: 1.2;
     text-align: center;
     margin-top: 17px 0 20px 0;
 }
-.items {
+.expertise .items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 100px 0;
     grid-row-gap: 100px;
 }
 
-.item {
+.expertise .item {
     width: 300px;
 }
-.item img{
+.expertise .item img {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
-.item h4 {
+.expertise .item h4 {
     font-family: 'Roboto';
     font-size: 14px;
     color: rgb(65, 61, 75);
@@ -287,10 +286,65 @@ a {
     text-align: center;
 }
 
-.item p {
+.expertise .item p {
     font-size: 14px;
     font-family: "Roboto";
     color: rgba(51, 51, 51, 0.749);
     line-height: 1.571;
+    text-align: center;
+}
+
+.team {
+    height: 712px;
+    width: 100%;
+    background-image: linear-gradient(0deg, rgba(9, 5, 47, 0.85) 0%, rgba(49, 29, 94, 0.85) 100%),
+    url('../img/jpg/PUT YOUR IMAGE HERE 2.jpg');
+    background-size: cover; 
+    background-position: center;  
+    position: relative;  
+}
+
+.team .title {
+    font-family: 'PlayfairDisplay';
+}
+
+.team .title h2 {
+    font-size: 22px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 70px;
+}
+.team .title p {
+    color: #f9f9f9;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 17px 0 20px 0;
+    font-weight: 100;
+}
+.team .item {
+    width: 220px;
+}
+.team .item .description {
+    border: 1px solid #fff;
+    position: relative;
+    top: -10px;;
+}
+
+.team .item .description h4{
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.team .item .description p {
+    font-size: 13px;
+    font-family: "Roboto";
+    color: rgba(250, 250, 250, 0.702);
+    line-height: 1.2;
     text-align: center;
 }
