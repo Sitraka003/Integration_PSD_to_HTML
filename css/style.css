@@ -22,6 +22,8 @@
 html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
+    /* overflow-y: scroll; */
 }
 
 body {
@@ -29,11 +31,26 @@ body {
 }
 
 .container {
-    /* background-color: #fff; */
     width: 940px;
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translateX(-50%)
+}
+button {
+    background: none;
+    border: 1px solid #00e0d0;
+    border-radius: 2px;
+    color: #00e0d0;
+    font-family: 'Hammersmith_One';
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: .5s;
+}
+
+button:hover {
+    color: white;
+    background-color: #00e0d0;
 }
 
 .header .container {
@@ -45,7 +62,6 @@ body {
     url('../img/jpg/PUT YOUR IMAGE HERE.jpg');
     background-size: cover;
     background-position: center;
-    position: absolute;
     left: 0px;
     top: 0px;
     width: 100%;
@@ -55,7 +71,7 @@ body {
 .navbar {
     display: grid;
     grid-template-columns: 1fr auto;
-    margin-top: 15px;
+    padding-top: 15px;
 }
 
 .navigation ul {
@@ -88,16 +104,15 @@ a {
     top: 130px;
 }
 
-.text {
+.main .text {
     color: #fff
 }
 
-.text h1 {
+.main .text h1 {
     font-family: 'PlayfairDisplay';
     text-align: center;
-    /* margin-top: 160px; */
 }
-.text .separateur {
+.main .text .separateur {
     content: '';
     height: 1px;
     width: 50px;
@@ -106,37 +121,25 @@ a {
     left: 50%;
     transform: translateX(-50%)
 }
-
 .text p {
-    width: 780px;
-    text-align: center;
     font-family: 'Roboto-Light';
     font-size: 14px;
     word-spacing: 4px;
-    line-height: 24px;
+    line-height: 1.571;
+}
+.main .text p {
+    width: 780px;
+    text-align: center;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     margin: 22px 0 44px 0;
 }
 
-button {
-    background: none;
-    border: 1px solid #00e0d0;
-    border-radius: 2px;
-    color: #00e0d0;
-    font-family: 'Hammersmith_One';
-    font-size: 17px;
-    text-transform: uppercase;
-    padding: 10px 15px;
+.main button {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    transition: .5s;
-}
-button:hover {
-    color: white;
-    background-color: #00e0d0;
 }
 
 
@@ -152,11 +155,36 @@ button:hover {
 .dot {
     width: 8px;
     height: 8px;
-    /* background-color: #00e0d0; */
     border: 1px solid #00e0d0;
     border-radius: 50%;
 }
 .dot-active {
     background-color: #00e0d0;
     border-color: #00e0d0;
+}
+
+.our_story {
+    height: 262px;
+    padding: 70px 0;
+    display: grid;
+    grid-template-columns: 235px auto;
+    grid-column-gap: 100px;
+}
+
+.our_story .right h1 {
+    font-family: 'PlayfairDisplay';
+    font-size: 22px;
+    color: rgb(65, 61, 75);
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.our_story .text p{
+    color: rgba(65, 61, 75, 0.749);
+    padding-bottom: 30px;
+    margin: 0;
+}
+.our_story .text {
+    margin-top: 28px;
 }
