@@ -188,3 +188,55 @@ a {
 .our_story .text {
     margin-top: 28px;
 }
+
+
+.content .container-fluid {
+    height: 550px;
+    overflow: hidden;    
+    
+}
+.video {
+    overflow: hidden;
+    height: 550px;
+    z-index: -100;
+    
+}
+
+#myVideo {
+    position: relative;
+    top: -25%;
+    min-width: 100% !important;
+    z-index: -100;
+    
+}
+.play {
+    background-image: linear-gradient( 0deg, rgb(9, 5, 47) 0%, rgb(49, 29, 94) 100%);
+    opacity: 0.851;
+    z-index: 999;
+    height: 550px;
+    position: relative;
+    top: -550px;
+}
+
+.btn-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 146px;
+    width: 158px;
+    transform: translate(-50%, -50%);
+}
+.btn-play img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btn-play h3 {
+    font-size: 16px;
+    font-family: 'Roboto';
+    color: #fff;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+
