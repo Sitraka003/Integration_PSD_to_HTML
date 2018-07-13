@@ -231,6 +231,7 @@ a {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    cursor: pointer;
 }
 .btn-play h3 {
     font-size: 16px;
@@ -255,7 +256,7 @@ a {
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
-    margin-top: 70px;
+    padding-top: 70px;
 }
 .expertise .title p {
     color: rgba(47, 45, 53, 0.749);
@@ -374,7 +375,7 @@ a {
 .works .title {
     display: grid;
     grid-template-columns: 1fr auto;
-    margin: 70px 0; 
+    padding: 70px 0; 
 }
 .works .title h2 {
     font-size: 22px;
