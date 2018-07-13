@@ -459,7 +459,7 @@ a {
 }
 .testimonials .text p {
     font-size: 16px;
-    font-family: "Playfair Display";
+    font-family: "PlayfairDisplay";
     color: rgba(255, 255, 255, 0.851);
     line-height: 1.625;
     text-align: center;
@@ -492,4 +492,44 @@ a {
     left: 50%;
     transform: translateX(-50%);
     top: 50px;
+}
+
+.contacts {
+    height: 650px;
+    display: grid;
+    grid-template-columns: minmax(460px, auto) minmax(460px, auto);
+    grid-column-gap: 100px;
+}
+.contacts h2{
+    font-size: 22px;
+    font-family: "Playfair Display";
+    color: rgb(65, 61, 75);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.contacts .right .clients {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 60px;
+    align-items: center;
+}
+.contacts .title {
+    margin: 60px 0 50px 0;
+}
+.contacts .left .formulaire {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+.contacts .left .formulaire input,
+.contacts .left .formulaire textarea {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgba(65, 61, 75, 0.5);
+    padding: 10px 15px;
+    margin-bottom: 23px;
 }
